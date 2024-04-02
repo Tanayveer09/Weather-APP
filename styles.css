@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.currentTab{
+    background-color: rgb(25, 163, 255);
+    border-radius: 10px;
+    border: none;
+    padding: 2% 8%;
+}
+
+body{
+    background: rgba(46,80,224,1);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.wrapper{
+    width: 50%;    
+}
+.wrapper h1{
+    font-size: 60px;
+    color: white;
+    font-size: 33px;
+    margin: 8% 26% 0% 26%;
+    padding-left: 53px;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    color: white;
+    padding: 6% 10% 0% 10%;
+    cursor: pointer;
+}
+.displayScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 10px solid black; */
+}
+
+.grantLocation{
+    display: none;
+    /* niche wale code ko hatana hai */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 10%; */
+} 
+   
+
+.grantLocation.active{
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 10%;
+}
+
+.grantLocation img{
+    width: 20%;
+    margin-bottom: 25px;
+}
+.grantLocation h2{
+    letter-spacing: 0.2 mm;
+    font-size: 30px;
+}
+.grantLocation p{
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.grantLocation .grantAccessBtn{
+    background: rgb(25, 163, 255);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 2% 8%;
+    cursor: pointer;
+}
+
+
+.searchForm{
+    display: none;
+    /* width: 75%;
+    display: flex;
+    justify-content: space-between; */ 
+}
+.searchForm.active{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.searchForm .input{
+    width: 95%;
+    height: 40px;
+    background-color: rgb(25, 163, 255);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 4px 0px 2px 20px;
+    
+}
+
+.searchForm .input::placeholder{
+    color: white;
+    font-size: 15px;
+    padding-left: 2px;
+}
+.searchForm .searchBtn{
+    background-color: rgb(25, 163, 255);
+    border: none;
+    border-radius: 10px;
+    
+}
+
+
+.weatherOutput{
+    display: none;
+
+    /* color: white;
+    margin-top: 40px; */
+}
+.weatherOutput.active{
+    display: inline;
+    color: white;
+    margin-top: 40px;
+}
+
+.weatherOutput .cityInfo{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.weatherOutput .cityInfo p{
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.weatherOutput .cityInfo img{
+    height: 20px;
+    width: 25px;
+    position: relative;
+    top: 15px;
+}
+
+.tempInfo .weatherCondition{
+    margin: 10px 0px 10px 230px;
+    font-size: 30px;
+}
+.tempInfo .weatherIcon{
+    margin-left: 236px;
+}
+
+.tempInfo .temp{
+    margin-left: 182px;
+    font-size: 50px;
+    font-weight: 800;
+    
+}
+
+.weatherOutput .Boxes{
+    margin-top: 20px;
+    padding-left: 180px;
+    display: flex;
+    justify-content:space-around;
+    width: 110%;
+    transform: translateX(-140px);
+}
+
+.weatherOutput .Boxes .windSpeedBox{
+    transform: translateY(48px);
+    background-color: rgb(25, 163, 255);
+    height: 100px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.weatherOutput .Boxes .windSpeedBox img{
+    height:25px;
+    width:40px;
+}
+.weatherOutput .Boxes .humidityBox{
+    transform: translateY(48px);
+    background-color: rgb(25, 163, 255);
+    height: 100px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.weatherOutput .Boxes .humidityBox img{
+    height:25px;
+    width:40px;
+}
+
+
+.weatherOutput .Boxes .cloudsBox{
+    transform: translateY(48px);
+    background-color: rgb(25, 163, 255);
+    height: 100px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.weatherOutput .Boxes .cloudsBox img{
+    height:25px;
+    width:40px;
+
+}
+
+.loadingScreen{
+    display: none;
+   
+}
+.loadingScreen.active{
+    margin-top: 20px;
+    display: inline;
+    color: white;
+}
+.loadingScreen p{
+    color: white;
+    padding-top: 10px;
+    font-size: 25px;
+}
